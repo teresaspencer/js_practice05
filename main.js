@@ -31,7 +31,12 @@ function divisibleByThree(number) {
 // return the average of num1 and num2. Returned results should be
 // rounded to the nearest integer. Hint: Use a Math method to round.
 function averageAge(num1, num2, num3) {
-    return Math.round(Math.average(num1, num2, num3));
+    let myAverage;
+    if(num3 === undefined) {
+        myAverage = (num1 + num2) / 2;
+    }
+    else myAverage = (num1 + num2 + num3) / 3;
+    return Math.round(myAverage);
 }
 
 // 5) Create a function named leetSpeak that accepts a word
